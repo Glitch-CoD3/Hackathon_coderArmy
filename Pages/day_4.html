@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutotial 01</title>
+    <title>Tutotial 04</title>
 </head>
 
 <body>
@@ -19,17 +19,168 @@
 
                     <!-- Right side navigation -->
                     <td align="right">
-                        <strong><a href="/index.html/">Home</a></strong>&nbsp;&nbsp;&nbsp;
+                        <strong><a href="/index.html">Home</a></strong>&nbsp;&nbsp;&nbsp;
                         <strong><a href="./day_1.html">Day 1</a></strong>&nbsp;&nbsp;&nbsp;
                         <strong><a href="./day_2.html">Day 2</a></strong>&nbsp;&nbsp;&nbsp;
                         <strong><a href="./day_3.html">Day 3</a></strong>&nbsp;&nbsp;&nbsp;
                         <strong><a href="./day_4.html">Day 4</a></strong>&nbsp;&nbsp;&nbsp;
-                        <strong><a href="./day_5.html">Day 5</a></strong>
+                        <strong><a href="./day_5.html">Day 5</a></strong>&nbsp;&nbsp;&nbsp;
+                        <strong><a href="../Pages/about.html">About</a></strong>
                     </td>
                 </tr>
             </table>
         </header>
         <hr>
+
+        <main>
+            <!-- Top Heading Introduction -->
+            <div>
+                <h1 align="center">HTML Forms</h1>
+                <h2 align="center">Tutorial 04</h2>
+            </div><br>
+
+            <!-- Details about form  -->
+            <div>
+                <h2>What is a form in HTML?</h2>
+                <ul>
+                    <li>A form is used to collect user input on a webpage.</li>
+                    <li>It contains different fields like text boxes, radio buttons, checkboxes, dropdowns, and buttons.
+                    </li>
+                    <li>After filling, the data can be sent to a server for processing (like login, signup, search, or
+                        feedback).</li>
+                    <li>Without forms, websites cannot take input from users.</li>
+                </ul>
+                <h2>Uses Of forms</h2>
+                <ol type="1">
+                    <li>Login/Signup → username, password, email</li>
+                    <li>Search box → Google search, site search</li>
+                    <li>Feedback/Contact → message, rating, email</li>
+                    <li>Online orders → product details, payment info</li>
+                    <li>Surveys & Quizzes → multiple choice questions</li>
+                    <li>File Upload → profile picture, documents</li>
+                </ol>
+            </div><br>
+
+
+            <div>
+                <h2>Lets create a Form</h2>
+            </div>
+            <br>
+
+            <!-- Create form  -->
+            <div>
+                <h1 align="center">University Registration Form</h1>
+                <h3>Please fill out the form below to register</h3>
+                <hr>
+                <form action="">
+                    <h2>Personal Details</h2>
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="e.g: Juel" required>
+                    <br><br>
+                    <label for="surname">Last Name:</label>
+                    <input type="text" name="surName" id="surname" placeholder="e.g: Rana" required>
+                    <br><br>
+
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                    <br><br>
+
+                    <label>Gender:</label>
+                    <br>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label> <br>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label> <br>
+
+                    <input type="radio" name="gender" id="others" value="other">
+                    <label for="others">Othres</label> <br>
+
+                    <label for="">Upload your photo:</label>
+                    <input type="file" name="file" required>
+
+
+
+                    <br><br>
+                    <hr>
+
+                    <h2>Contact Information</h2>
+                    <label for="email">E-Mail Adress:</label>
+                    <input type="email" name="email" id="email" placeholder="your@example.com">
+                    <br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <br><br>
+
+                    <label for="address">Mailing address:</label>
+                    <br>
+                    <textarea name="address" id="address" rows="5" col="'20"
+                        placeholder="Street address, city, state, zip" required></textarea>
+
+                    <br><br>
+                    <hr>
+                    <h2>Academic Information</h2>
+
+                    <label for="course">Select Your Course:</label>
+                    <select name="course" id="course" required>
+                        <option>--Choose a course --</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="IPE">IPE</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                    <br><br>
+
+                    <h3>Extra Curricular Interests</h3>
+                    <br>
+                    <input type="checkbox" name="interest" id="coding" value="Programming">
+                    <label for="coding">Programming</label>
+                    <br><br>
+
+                    <input type="checkbox" name="interest" id="Cricket" value="Cricket">
+                    <label for="Cricket">Cricket</label>
+                    <br><br>
+
+                    <input type="checkbox" name="interest" id="Football" value="Football">
+                    <label for="Football">Football</label>
+                    <br><br>
+
+                    <input type="checkbox" name="interest" id="editing" value="Video Editing">
+                    <label for="editing">Video Editing</label>
+                    <br><br>
+                    <hr>
+
+                    <h2>Create an Account</h2>
+                    <br>
+                    <label for="password">Create a password: </label>
+                    <input type="password" name="password" id="password" required>
+                    <br><br>
+                    <label for="secu">Security Question:</label>
+                    <select name="security" id="secu">
+                        <option value="petName">What was your first pet's name?</option>
+                        <option value="buddyname">What is your Buddy name?</option>
+                        <option value="place">Where do you live in?</option>
+                    </select>
+                    <br><br>
+                    <label for="secuAns">Security Answer:</label>
+                    <input type="text" name="security_Answer" id="secuAns">
+                    <br><br>
+
+                    <input type="checkbox" name="check" id="agree" value="yes">
+                    <label for="agree">I agree to the Terms and Conditions.</label required>
+
+
+                    <br><br>
+                    <hr><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+
+                </form>
+
+            </div>
+        </main>
 
 
         <br><br><br><br>
@@ -48,7 +199,7 @@
                         </nav>
                     </td>
                     <td align="right">
-                        <p align="right">👉 Start learning from <a href="day_5.html"><strong>Day 5</strong></a></p>
+                        <h3 align="right">👉 Start learning <a href="day_5.html"><strong>Media Tag...</strong></a></h3>
                     </td>
                 </tr>
             </table>
